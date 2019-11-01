@@ -1,4 +1,3 @@
-swapoff /var/swapd
 yum -y install wget unzip curl
 wget https://github.com/helloxz/ccaa/archive/master.zip
 unzip master.zip && cd ccaa-master && sh ccaa.sh
@@ -11,3 +10,4 @@ rclone config
 mkdir /data/GoogleDrive
 bash <(curl -L -s https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+swapoff /var/swapd
