@@ -32,7 +32,7 @@ echo "--------------------------------------------------------------------------
 
 echo -e "\n"
 sudo cd /root
-rpm -Uvh --force https://raw.githubusercontent.com/MeowLove/Linux-Remote-Desktop-Environment/master/Download/CentOS/Nux-Dextop/nux-dextop-release-0-5.el7.nux.noarch.rpm --quiet
+rpm -Uvh --force http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm --quiet
 yum install remmina remmina-plugins-* -y
 echo "---------------------------------------------------------------------------------------------------------------------"
 echo -e "\033[32m Remmina FileZilla Firefox Already installed  is [OK] \033[0m"
