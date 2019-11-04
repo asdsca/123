@@ -1,6 +1,6 @@
+yum install -y epel-release
 yum install screen
 screen -S 1
-yum install -y epel-release
 yum groupinstall "Server with GUI"
 systemctl set-default graphical
 yum install -y tigervnc-server xrdp
