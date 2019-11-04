@@ -1,5 +1,4 @@
-#!/bin/bash
-yum install -y epel-release
-yum groupinstall "Server with GUI"
-systemctl set-default graphical
-reboot
+yum install screen
+screen -S 1
+wget -O qBittorrentCentOS7install.sh https://zhujiwiki.com/wp-content/uploads/2018/12/qBittorrentCentOS7install.sh && bash qBittorrentCentOS7install.sh
+exit
