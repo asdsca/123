@@ -1,3 +1,11 @@
-screen -S 2
-wget -O qBittorrentCentOS7install.sh https://zhujiwiki.com/wp-content/uploads/2018/12/qBittorrentCentOS7install.sh && bash qBittorrentCentOS7install.sh
-exit
+yum -y groupinstall "Development Tools"
+yum -y install xz m4 make automake libtool gettext openssl-devel libcurl-devel libevent-devel intltool gtk3-devel psmisc
+wget https://github.com/transmission/transmission-releases/raw/master/transmission-2.94.tar.xz
+tar xf transmission-2.94.tar.xz
+cd transmission-2.94
+./configure
+make
+make install
+cd ~
+wget https://github.com/ronggang/transmission-web-control/raw/master/release/install-tr-control.sh --no-check-certificate
+bash install-tr-control.sh
