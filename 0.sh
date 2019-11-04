@@ -8,5 +8,4 @@ systemctl start xrdp
 systemctl enable xrdp
 firewall-cmd --permanent --add-port=3389/tcp
 firewall-cmd --reload
-exit
 reboot
