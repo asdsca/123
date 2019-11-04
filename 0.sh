@@ -1,2 +1,5 @@
-wget --no-check-certificate -qO ~/Linux-Remote-Desktop-Environment.sh 'https://raw.githubusercontent.com/iiiiiii1/Linux-Remote-Desktop-Environment/master/Download/Common/Load/Linux-Remote-Desktop-Environment.sh' && chmod a+x ~/Linux-Remote-Desktop-Environment.sh
-bash ~/Linux-Remote-Desktop-Environment.sh -CentOS
+yum install -y tigervnc-server xrdp
+systemctl start xrdp
+systemctl enable xrdp
+firewall-cmd --permanent --add-port=3389/tcp
+firewall-cmd --reload
