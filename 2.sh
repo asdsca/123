@@ -1,5 +1,5 @@
 #!/bin/bash
-
+yum install sudo curl wget epel-release -y
 echo -e "\n"
 clear
 echo -e "\n"
