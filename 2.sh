@@ -7,5 +7,3 @@ cd transmission-2.94
 make
 make install
 cd ~
-wget https://github.com/ronggang/transmission-web-control/raw/master/release/install-tr-control.sh --no-check-certificate
-bash install-tr-control.sh
