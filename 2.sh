@@ -25,7 +25,6 @@ yum install epel-release -y
 echo -e "\n"
 sudo cd /root
 yum groupinstall "X Window System" -y
-yum groupinstall "MATE Desktop" -y
 echo "---------------------------------------------------------------------------------------------------------------------"
 echo -e "\033[32m Desktop environment is installed  is [OK] \033[0m"
 echo "---------------------------------------------------------------------------------------------------------------------"
@@ -38,9 +37,6 @@ echo -e "\n"
 sudo cd /root
 yum install tigervnc-server tigervnc -y
 yum install xrdp -y
-touch ~/.Xclients
-echo "mate-session" > ~/.Xclients
-chmod a+x ~/.Xclients
 systemctl enable xrdp
 systemctl start xrdp
 firewall-cmd --add-port=3389/tcp --permanent
