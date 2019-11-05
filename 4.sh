@@ -8,3 +8,4 @@ echo "1）应急措施：\n"
 echo "chmod 666 /dev/null\n"
 echo "mount -o remount,rw /\n"
 echo "2) 编辑/etc/fstab 然后重启"
+reboot
