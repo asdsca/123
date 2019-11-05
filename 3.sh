@@ -7,3 +7,5 @@ cd transmission-2.94
 make
 make install
 cd ~
+firewall-cmd --permanent --add-port=9091/tcp
+firewall-cmd --reload
