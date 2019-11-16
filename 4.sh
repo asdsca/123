@@ -1,4 +1,4 @@
-dd if=/dev/zero of=/var/swapd bs=1024 count=2097152
+dd if=/dev/zero of=/var/swapd bs=1024 count=4194304
 chmod 0644 /var/swapd
 mkswap /var/swapd
 swapon /var/swapd
