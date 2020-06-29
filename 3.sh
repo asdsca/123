@@ -7,4 +7,4 @@ echo "/usr/sbin/ccaa start" >> /etc/rc.d/rc.local
 curl https://rclone.org/install.sh | sudo bash
 wget https://www.moerats.com/usr/shell/rclone_debian.sh && bash rclone_debian.sh
 rclone config
-mkdir /data/GoogleDrive
+mkdir -p /data/GoogleDrive
